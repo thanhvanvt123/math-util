@@ -34,4 +34,25 @@ public class MathUtil {
         System.out.println("expected: IllegalArguementException: " + MathUtility.getFactorial(-5));
     }
     
+    //mình mún kết luận hàm ngon mình phải test các trường hợp xài hàm
+    //trường hợp 5! 0! -5! 21!
+    //mình phải thiết kế các test case tình huống test để sau đó mình verify
+    //giữa giá trị trả về của hàm(actual) có khớp vs expected cái mình đã dự đoán
+    //hàm chạy phải trả về
+    //nếu mọi thứ khớp tức là actual == expected, mới nói hàm ngon
+    //nhược điểm: nhìn bằng mắt và so sánh kq của từng case
+    //cách này ổn nhưng tiềm ẩn sai sót do nhìn = mắt nhìu case
+    
+    //cách nâng cao
+    //cũng nhìn = mắt, nhưng chỉ nhìn 2 màu xanh- đỏ cho mọi test case
+    //có nghĩa: nếu bạn xài hàm vs 100 tham số, chạy hàm 100 tình huống khác nhau
+    //bạn chỉ cần nhìn duy nhất 2 màu xanh đor
+    //xanh code ổn cho mọi test case mọi tình huống gọi hàm
+    //mọi case phải có actual == expected thì mới xanh
+    //hàm dùng cho 99 trường hợp, actual == expcted cho 99% tình huống
+    //chỉ có 1 tình huống sai,k khớp , hàm không ổn định
+    //khi không ổn định ai dám sài, ổn định và chính xác phải cho mọi trường hợp
+    //chỉ cần ít nhất 1 cái không ổn, đỏ cả đám để 
+    
+    
 }
